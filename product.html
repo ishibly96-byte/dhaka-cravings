@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dhaka Cravings - Product Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#93000a",
+                        "secondary": "#c8c6c5",
+                        "surface-container-highest": "#41312a",
+                        "surface-container-low": "#261812",
+                        "outline": "#a98a7d",
+                        "on-surface": "#f8ddd2",
+                        "on-background": "#f8ddd2",
+                        "primary-fixed": "#ffdbcc",
+                        "surface-tint": "#ffb693",
+                        "surface-variant": "#41312a",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "background": "#1d100a",
+                        "error": "#ffb4ab",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-primary-fixed-variant": "#7a3000",
+                        "tertiary-container": "#989999",
+                        "on-primary-container": "#572000",
+                        "on-secondary-container": "#b7b5b4",
+                        "tertiary": "#c6c6c7",
+                        "surface-container-high": "#362720",
+                        "on-primary-fixed": "#351000",
+                        "on-tertiary-container": "#2f3132",
+                        "inverse-on-surface": "#3d2d26",
+                        "surface-container": "#2b1c16",
+                        "primary-fixed-dim": "#ffb693",
+                        "primary-container": "#ff6b00",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-dim": "#1d100a",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "secondary-container": "#474746",
+                        "surface": "#1d100a",
+                        "on-tertiary": "#2f3131",
+                        "on-secondary": "#313030",
+                        "surface-container-lowest": "#170b06",
+                        "outline-variant": "#5a4136",
+                        "primary": "#ffb693",
+                        "inverse-primary": "#a04100",
+                        "on-primary": "#561f00",
+                        "surface-bright": "#46362e",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-surface-variant": "#e2bfb0",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "inverse-surface": "#f8ddd2"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "md": "24px",
+                        "gutter": "16px",
+                        "lg": "40px",
+                        "xs": "4px",
+                        "margin-mobile": "20px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xl": "64px"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "price-display": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+                        "price-display": ["20px", { "lineHeight": "1", "fontWeight": "900" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Custom scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1d100a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #41312a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff6b00;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md selection:bg-primary-container selection:text-white">
+<!-- Top Navigation (Contextual: Present, but maybe simplified for a detail page. Using Shared JSON config) -->
+<header class="fixed top-0 w-full z-50 border-b-2 border-neutral-800 bg-neutral-900/95 dark:bg-black/90 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-5 py-4 max-w-[1200px] mx-auto">
+<!-- Back Button for Detail Page Intent -->
+<button class="text-neutral-400 hover:text-white transition-colors flex items-center justify-center p-2 rounded-full hover:bg-neutral-800 active:scale-95" onclick="window.location.href='menu.html'">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<a class="text-2xl font-black italic tracking-tighter text-orange-600 dark:text-orange-500 hover:scale-105 transition-transform" href="index.html">
+                Dhaka Cravings
+            </a>
+<div class="flex items-center gap-4">
+<button class="text-neutral-400 hover:text-orange-500 transition-colors hover:bg-neutral-800 p-2 rounded-full active:scale-95" onclick="window.location.href='checkout.html'">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-24 pb-32 md:pb-xl px-margin-mobile md:px-lg max-w-[1200px] mx-auto w-full flex flex-col md:flex-row gap-lg md:gap-xl">
+<!-- Left Column: Image Gallery / Hero -->
+<div class="w-full md:w-1/2 flex flex-col gap-sm">
+<!-- Main Hero Image -->
+<div class="relative w-full aspect-square md:aspect-[4/5] rounded-xl overflow-hidden group">
+<img alt="Signature Dhaka Burger" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a massive double patty smash burger with dripping melting cheese, crispy edges, and spicy naga sauce spilling over a toasted brioche bun. Dark moody lighting, hyper-realistic food photography, high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_0FGDoWW0VCD3F_vvx07b-QSF4XH-OrNBfbL3fWjY0GhzyEgyzrbMdpEaxqXatleQYdsIx1Zw7UAmzItnFsrNnINVZEnNlS7VORT1pqbmn_dhN0wvF7gRIxpMoWAJ9tTh7e3rWoXs8ApZntQrCzvXLNRgu-VrEEdI5kFZFvSQW8IWAanR7F9xlGmoGsrKUGj739I7f-ca-tVwsrxzVAvAg0iNL1tY4ZNRwTIHapP8izNmVBLBgqF-ckPO4cH6-72PUfXs_8BMcmI"/>
+<!-- Floating Badges -->
+<div class="absolute top-md left-md flex flex-col gap-xs">
+<span class="bg-primary-container text-white px-3 py-1 rounded-full font-label-bold text-label-bold uppercase tracking-wider shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)]">
+                        Mohammadpur Only
+                    </span>
+<span class="bg-error text-on-error px-3 py-1 rounded-full font-label-bold text-label-bold uppercase tracking-wider shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] w-max flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-weight="fill">local_fire_department</span> Hot Seller
+                    </span>
+</div>
+</div>
+<!-- Thumbnail Strip -->
+<div class="flex gap-sm overflow-x-auto pb-2 snap-x hide-scrollbar">
+<button class="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden border-2 border-primary-container snap-center">
+<img alt="Burger Front View" class="w-full h-full object-cover" data-alt="Close up thumbnail of a smash burger front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8TnQEWqSkdwpp1tpYf34_obNlro8Rv4gQAsYvfhnu11ulK-5sON3y13fT4QHnXaIoHIl7QpFASqgBN191plXkrePu0LQfeJRoiKezNo2R-aC5y6QBvZGGCHMzEem2W3ONBfe_YH6n5ROKie3DoW0jfhpZKu7l7P9DoBO0WViaJ7kFkLQGTiCKKXUWA4s-Q2V3sHSHzV6YdDF7ddwPECgqo8Nn7w2BBY-qG20UCAfjUXttTQVS2bUbIpvzTAXkhfdxuUzkRMqUdZY"/>
+</button>
+<button class="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden border-2 border-transparent hover:border-surface-variant transition-colors snap-center opacity-70 hover:opacity-100">
+<img alt="Burger Top View" class="w-full h-full object-cover" data-alt="Close up thumbnail of a smash burger top down view showing bun texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAToNaDEk-iwBtNcF_G9O1vOFXfDeBMsZT4nk3LyAH_Mrd4aOU5yzUBkdiCY5qp6wIj6OzVro5PlXe46TJ0qf8xCRdhCoraGi8ki91g8x7ksOFL8KiqlsmsBquC6Yq-p1GNj6rMOS0Ybh6h6cKBcMRFxD_ypxpK7HilGPvQQojAZSYKo_3d-XH3-QoLsfuSmrFUi961vbtLdkXcDAOHFO17PTslVwTc-5yo3fNAkpU6KwWYE43cnGo9nsQXDjsklKwZLdorNu_C0Ac"/>
+</button>
+<button class="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden border-2 border-transparent hover:border-surface-variant transition-colors snap-center opacity-70 hover:opacity-100">
+<img alt="Fries Side" class="w-full h-full object-cover" data-alt="Close up thumbnail of spicy crinkle cut fries side dish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkjE8Iti2h9Juywo8RElS9EIK9ioSxrV-fH9063Bfv5BcbFhHVWiQ7ZO6mYz6grt5aTfFHUQWO5rLNY-SWrKPa4byLuOOpqF4EqGYnNEDwIv6XBvZJMZUDfSwNt1XRhlbLVQzYfquNQG67u-E-S96LJLugPLUSOEbycaps0K1BERDq_xrvtIS2hygZTeyDkovI2hmGoLmsr11cfMSu4_deXNRBi-7Z1aIAhs3W9B3ZvG9A6vQH-Is5WptgtuTK-BAYZy52MpaWOIg"/>
+</button>
+</div>
+</div>
+<!-- Right Column: Product Info & Configuration -->
+<div class="w-full md:w-1/2 flex flex-col gap-lg">
+<!-- Header Section -->
+<div class="flex flex-col gap-base">
+<div class="flex justify-between items-start gap-4">
+<h1 class="font-display-xl text-display-xl text-white uppercase break-words">
+                        The Naga<br/>Smash
+                    </h1>
+<span class="font-price-display text-price-display text-primary-container bg-surface-container-high px-4 py-2 rounded-lg border border-surface-variant whitespace-nowrap">
+                        ৳ 450
+                    </span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-sm">
+                    Two 100g freshly ground beef patties, smashed to crispy perfection. Smothered in double cheddar, caramelized onions, and our signature blazing Naga chili aioli. Not for the faint of heart.
+                </p>
+<!-- Nutrition/Meta Info -->
+<div class="flex flex-wrap gap-4 mt-sm border-t border-surface-container-high pt-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-lg">local_fire_department</span>
+<span class="font-label-bold text-label-bold uppercase">850 kcal</span>
+</div>
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span class="font-label-bold text-label-bold uppercase">15-20 Min Prep</span>
+</div>
+</div>
+</div>
+<!-- Customization Section -->
+<div class="flex flex-col gap-md">
+<h3 class="font-headline-md text-headline-md text-white border-b border-surface-container-high pb-xs">
+                    Customize It
+                </h3>
+<!-- Options List -->
+<div class="flex flex-col gap-sm">
+<!-- Option Item: Spice Level -->
+<label class="flex items-center justify-between p-4 rounded-lg border border-surface-variant bg-surface-container hover:border-primary-container cursor-pointer transition-colors group">
+<div class="flex items-center gap-sm">
+<div class="relative flex items-center justify-center w-6 h-6 border-2 border-outline rounded bg-transparent group-hover:border-primary-container">
+<input class="peer sr-only" type="checkbox"/>
+<span class="material-symbols-outlined text-primary-container text-sm opacity-0 peer-checked:opacity-100 absolute" data-weight="fill">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold uppercase text-on-surface">Extra Naga Spice Level</span>
+<span class="font-body-md text-body-md text-error text-sm text-[12px]">Warning: Extremely Hot</span>
+</div>
+</div>
+<span class="font-price-display text-price-display text-secondary text-sm">+ ৳ 50</span>
+</label>
+<!-- Option Item: Cheese -->
+<label class="flex items-center justify-between p-4 rounded-lg border border-primary-container bg-surface-container-high cursor-pointer transition-colors group">
+<div class="flex items-center gap-sm">
+<div class="relative flex items-center justify-center w-6 h-6 border-2 border-primary-container rounded bg-primary-container">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<span class="material-symbols-outlined text-background text-sm absolute" data-weight="fill">check</span>
+</div>
+<span class="font-label-bold text-label-bold uppercase text-white">Add Cheese Slice</span>
+</div>
+<span class="font-price-display text-price-display text-secondary text-sm">+ ৳ 60</span>
+</label>
+<!-- Option Item: Double Patty -->
+<label class="flex items-center justify-between p-4 rounded-lg border border-surface-variant bg-surface-container hover:border-primary-container cursor-pointer transition-colors group">
+<div class="flex items-center gap-sm">
+<div class="relative flex items-center justify-center w-6 h-6 border-2 border-outline rounded bg-transparent group-hover:border-primary-container">
+<input class="peer sr-only" type="checkbox"/>
+<span class="material-symbols-outlined text-primary-container text-sm opacity-0 peer-checked:opacity-100 absolute" data-weight="fill">check</span>
+</div>
+<span class="font-label-bold text-label-bold uppercase text-on-surface">Double Patty</span>
+</div>
+<span class="font-price-display text-price-display text-secondary text-sm">+ ৳ 180</span>
+</label>
+</div>
+<!-- Special Instructions -->
+<div class="flex flex-col gap-xs mt-sm">
+<label class="font-label-bold text-label-bold text-secondary uppercase" for="instructions">Special Instructions</label>
+<textarea class="w-full bg-surface-container text-on-surface border border-surface-variant rounded-lg p-3 focus:ring-1 focus:ring-primary-container focus:border-primary-container font-body-md resize-none placeholder-outline-variant" id="instructions" placeholder="e.g. No onions, extra napkins..." rows="2"></textarea>
+</div>
+</div>
+<!-- Desktop CTA (Hidden on Mobile, where persistent bar takes over) -->
+<div class="hidden md:flex items-center gap-sm mt-auto pt-lg border-t border-surface-container-high">
+<!-- Quantity Selector -->
+<div class="flex items-center bg-surface-container border border-surface-variant rounded-lg h-14">
+<button class="w-12 h-full flex items-center justify-center text-secondary hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-10 text-center font-price-display text-price-display text-white">1</span>
+<button class="w-12 h-full flex items-center justify-center text-secondary hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Add to Cart Button -->
+<button class="flex-grow h-14 bg-primary-container text-background font-headline-md text-headline-md uppercase tracking-wide rounded-lg flex items-center justify-center gap-2 hover:bg-orange-500 active:scale-[0.98] transition-all shadow-[4px_4px_0px_0px_#41312a]" onclick="window.location.href='checkout.html'">
+<span>Add to Cart</span>
+<span class="text-lg opacity-80 border-l border-background/20 pl-2 ml-2">৳ 510</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Mobile Persistent Cart Bar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white text-background p-margin-mobile border-t border-surface-variant shadow-[0_-10px_30px_-10px_rgba(0,0,0,0.8)] z-40 flex items-center gap-sm">
+<!-- Quantity Selector (Minimal for Mobile) -->
+<div class="flex items-center bg-surface-container-lowest border border-outline-variant rounded-lg h-14 px-2">
+<button class="p-2 text-background hover:text-primary-container">
+<span class="material-symbols-outlined text-lg">remove</span>
+</button>
+<span class="px-2 font-price-display text-price-display text-background">1</span>
+<button class="p-2 text-background hover:text-primary-container">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+<button class="flex-grow h-14 bg-primary-container text-background font-headline-md text-headline-md uppercase tracking-wide rounded-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform shadow-[4px_4px_0px_0px_#1d100a]" onclick="window.location.href='checkout.html'">
+            Add <span class="opacity-80">·</span> ৳ 510
+        </button>
+</div>
+<!-- Footer (Using Shared JSON structure) -->
+<footer class="mt-auto full-width border-t-8 border-orange-600 bg-neutral-950 text-orange-600 dark:text-orange-500 font-bold text-xs uppercase tracking-widest pb-24 md:pb-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 px-10 py-12 max-w-7xl mx-auto">
+<div class="text-xl font-black text-orange-500">
+                Dhaka Cravings
+            </div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">About Us</a>
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">Support</a>
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">Privacy</a>
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">Terms</a>
+</nav>
+<div class="text-neutral-500 text-center md:text-right">
+                © 2024 Dhaka Cravings. Straight from Mohammadpur.
+            </div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+</body></html>

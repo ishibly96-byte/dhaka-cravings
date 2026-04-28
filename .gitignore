@@ -1,0 +1,8 @@
+.env
+.env.local
+orders/*.json
+.server.pid
+server.out.log
+server.err.log
+node_modules/
+npm-debug.log*

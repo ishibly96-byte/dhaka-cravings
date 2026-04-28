@@ -1,0 +1,9 @@
+Server running at http://localhost:3000/
+GET /
+GET /checkout.html
+GET /
+GET /auth.html
+GET /api/config
+GET /admin.html
+GET /js/backend.js
+GET /js/main.js

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admin - Dhaka Cravings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;900&display=swap" rel="stylesheet"/>
+<script>tailwind.config={theme:{extend:{colors:{background:"#120f0d","primary-container":"#ff6b00","surface":"#1f1916","secondary":"#c9b8ac"},fontFamily:{display:["Bebas Neue","sans-serif"],body:["Inter","sans-serif"]}}}}</script>
+<style>
+.admin-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}
+.admin-stats article,.admin-row,.admin-empty{background:#1f1916;border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:16px}
+.admin-stats span,.admin-row span{display:block;color:#c9b8ac;font-size:13px}
+.admin-stats strong{font-size:32px}
+.admin-table{display:grid;gap:10px}
+.admin-row{display:grid;grid-template-columns:2fr 110px 100px 170px 90px;gap:12px;align-items:center}
+.admin-row select{background:#120f0d;border:1px solid rgba(255,255,255,.14);border-radius:6px;color:white}
+.admin-row button{background:#ff6b00;border:0;border-radius:6px;color:white;font-weight:900;padding:10px}
+@media(max-width:800px){.admin-stats,.admin-row{grid-template-columns:1fr}.admin-row{align-items:stretch}}
+</style>
+</head>
+<body class="bg-background text-white font-body min-h-screen">
+<nav class="border-b border-white/10 bg-black/80">
+<div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+<a class="text-2xl font-black italic tracking-tighter text-primary-container" href="index.html">Dhaka Cravings</a>
+<a class="text-xs font-black uppercase tracking-widest text-secondary hover:text-white" href="auth.html">Account</a>
+</div>
+</nav>
+<main class="max-w-6xl mx-auto px-5 py-8">
+<h1 class="font-display text-7xl leading-none uppercase">Admin Orders</h1>
+<div data-admin-root>
+<section class="admin-empty mt-6">Loading admin dashboard...</section>
+</div>
+</main>
+<script type="module" src="js/backend.js"></script>
+</body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign In - Dhaka Cravings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;900&display=swap" rel="stylesheet"/>
+<script>tailwind.config={theme:{extend:{colors:{background:"#120f0d","primary-container":"#ff6b00","surface":"#1f1916","secondary":"#c9b8ac"},fontFamily:{display:["Bebas Neue","sans-serif"],body:["Inter","sans-serif"]}}}}</script>
+<style>
+.auth-mode.is-active{background:#ff6b00;color:#fff}
+</style>
+</head>
+<body class="bg-background text-white font-body min-h-screen">
+<main class="min-h-screen grid place-items-center px-5 py-10">
+<section class="w-full max-w-md bg-surface border border-white/10 rounded-xl p-6">
+<a class="text-2xl font-black italic tracking-tighter text-primary-container" href="index.html">Dhaka Cravings</a>
+<h1 class="font-display text-6xl leading-none uppercase mt-6">Account</h1>
+<div class="grid grid-cols-2 gap-2 my-5">
+<button class="auth-mode is-active rounded-lg py-3 font-black uppercase" type="button" data-auth-mode="signin">Sign In</button>
+<button class="auth-mode rounded-lg py-3 font-black uppercase bg-black/30 text-secondary" type="button" data-auth-mode="signup">Create</button>
+</div>
+<form class="space-y-3" data-auth-form>
+<input class="w-full rounded-lg bg-black/30 border-white/10 text-white" name="displayName" placeholder="Name for new accounts"/>
+<input class="w-full rounded-lg bg-black/30 border-white/10 text-white" name="phone" placeholder="Phone for new accounts"/>
+<input class="w-full rounded-lg bg-black/30 border-white/10 text-white" name="email" placeholder="Email" required type="email"/>
+<input class="w-full rounded-lg bg-black/30 border-white/10 text-white" name="password" placeholder="Password" required type="password"/>
+<button class="w-full bg-primary-container text-white rounded-lg py-4 font-black uppercase" type="submit">Continue</button>
+</form>
+<p class="text-secondary text-sm mt-4 min-h-5" data-auth-message></p>
+</section>
+</main>
+<script type="module" src="js/backend.js"></script>
+</body></html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu - Dhaka Cravings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#93000a",
+                        "secondary": "#c8c6c5",
+                        "surface-container-highest": "#41312a",
+                        "surface-container-low": "#261812",
+                        "outline": "#a98a7d",
+                        "on-surface": "#f8ddd2",
+                        "on-background": "#f8ddd2",
+                        "primary-fixed": "#ffdbcc",
+                        "surface-tint": "#ffb693",
+                        "surface-variant": "#41312a",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "background": "#1d100a",
+                        "error": "#ffb4ab",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-primary-fixed-variant": "#7a3000",
+                        "tertiary-container": "#989999",
+                        "on-primary-container": "#572000",
+                        "on-secondary-container": "#b7b5b4",
+                        "tertiary": "#c6c6c7",
+                        "surface-container-high": "#362720",
+                        "on-primary-fixed": "#351000",
+                        "on-tertiary-container": "#2f3132",
+                        "inverse-on-surface": "#3d2d26",
+                        "surface-container": "#2b1c16",
+                        "primary-fixed-dim": "#ffb693",
+                        "primary-container": "#ff6b00",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-dim": "#1d100a",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "secondary-container": "#474746",
+                        "surface": "#1d100a",
+                        "on-tertiary": "#2f3131",
+                        "on-secondary": "#313030",
+                        "surface-container-lowest": "#170b06",
+                        "outline-variant": "#5a4136",
+                        "primary": "#ffb693",
+                        "inverse-primary": "#a04100",
+                        "on-primary": "#561f00",
+                        "surface-bright": "#46362e",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-surface-variant": "#e2bfb0",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "inverse-surface": "#f8ddd2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "gutter": "16px",
+                        "lg": "40px",
+                        "xs": "4px",
+                        "margin-mobile": "20px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xl": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "price-display": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+                        "price-display": ["20px", { "lineHeight": "1", "fontWeight": "900" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased pt-[88px] pb-[88px] min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-neutral-900/95 dark:bg-black/90 text-orange-600 dark:text-orange-500 font-bold tracking-tight uppercase fixed top-0 w-full z-50 border-b-2 border-neutral-800 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-5 py-4 max-w-[1200px] mx-auto">
+<div class="flex items-center gap-gutter">
+<a class="text-2xl font-black italic tracking-tighter text-orange-600 dark:text-orange-500 active:scale-95 transition-all duration-150" href="index.html">Dhaka Cravings</a>
+</div>
+<div class="hidden md:flex gap-md">
+<a class="text-orange-500 font-black border-b-2 border-orange-500 pb-1 hover:bg-neutral-800 hover:text-orange-500 active:scale-95 transition-all duration-150" href="menu.html">Menu</a>
+<a class="text-neutral-400 font-bold hover:text-white hover:bg-neutral-800 hover:text-orange-500 active:scale-95 transition-all duration-150 pb-1" href="#">Deals</a>
+<a class="text-neutral-400 font-bold hover:text-white hover:bg-neutral-800 hover:text-orange-500 active:scale-95 transition-all duration-150 pb-1" href="tracking.html">Track Order</a>
+</div>
+<div class="flex items-center gap-sm">
+<!-- Language Toggle -->
+<div class="hidden sm:flex items-center gap-xs mr-4 border border-outline-variant rounded p-1">
+<button class="bg-primary-container text-white px-2 py-1 rounded text-[10px] font-bold">EN</button>
+<button class="text-neutral-400 px-2 py-1 rounded text-[10px] font-bold hover:text-white">BN</button>
+</div>
+<button aria-label="location_on" class="text-neutral-400 hover:text-orange-500 active:scale-95 transition-all duration-150">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</button>
+<button aria-label="shopping_cart" class="text-neutral-400 hover:text-orange-500 active:scale-95 transition-all duration-150 relative">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary-container text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-lg py-lg">
+<!-- Header & Quick Filters -->
+<header class="mb-lg">
+<h1 class="font-display-xl text-display-xl text-on-surface mb-sm">Menu</h1>
+<!-- Quick Filters (Scrollable on mobile) -->
+<div class="flex overflow-x-auto hide-scrollbar gap-sm pb-2 -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0">
+<button class="whitespace-nowrap px-md py-sm bg-primary-container text-white font-label-bold text-label-bold rounded-full active:scale-95 transition-all flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]" data-icon="local_fire_department" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    Spicy
+                </button>
+<button class="whitespace-nowrap px-md py-sm bg-surface-container-high text-on-surface font-label-bold text-label-bold rounded-full border border-outline-variant active:scale-95 transition-all flex items-center gap-xs hover:border-primary-container">
+<span class="material-symbols-outlined text-[16px]" data-icon="eco">eco</span>
+                    Vegetarian
+                </button>
+<button class="whitespace-nowrap px-md py-sm bg-surface-container-high text-on-surface font-label-bold text-label-bold rounded-full border border-outline-variant active:scale-95 transition-all flex items-center gap-xs hover:border-primary-container">
+<span class="material-symbols-outlined text-[16px]" data-icon="star">star</span>
+                    Best Sellers
+                </button>
+<button class="whitespace-nowrap px-md py-sm bg-surface-container-high text-on-surface font-label-bold text-label-bold rounded-full border border-outline-variant active:scale-95 transition-all flex items-center gap-xs hover:border-primary-container">
+<span class="material-symbols-outlined text-[16px]" data-icon="savings">savings</span>
+                    Budget Deals
+                </button>
+</div>
+</header>
+<!-- Category: Burgers -->
+<section class="mb-xl">
+<div class="flex items-center justify-between mb-md border-b border-surface-container-high pb-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Burgers</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-md">
+<!-- Product Card 1 -->
+<article class="bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant group hover:border-primary-container transition-colors flex flex-col relative cursor-pointer" onclick="window.location.href='product.html'">
+<!-- Image Area -->
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img alt="Juicy double beef burger with melted cheese and fresh lettuce on a dark slate background" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of a massive double beef patty burger with dripping melted yellow cheese, fresh green lettuce, and shiny brioche bun, dramatically lit against a dark charcoal background with a hint of smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1keKCaj41-vKJN5sslPwPwL_dnCCBnTRyp8hd4GNvoYZe7487ZGNFvcrYbtRloklAEOW4kYO1Zra-jZFMja95CaerBumpD1lT4PYs704rldgTZX4JFhURGbrZufYx3X8atSdjRY_ktwMrJHC5CnoYAX_YVPRNTRLe3ZQsfV1ftUwgf2-UmcgP1TFfjqf5GHdHoFlK-oyB2PYKqyCmlS0xr1aPQG1u-2A-0T3T_c8-CSdrJydylzaNhUG26hZwxRvWsBXqiJOzsIw"/>
+<!-- Floating Price -->
+<div class="absolute top-sm right-sm bg-primary-container text-white px-3 py-1 font-price-display text-price-display rounded shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                            ৳ 450
+                        </div>
+<!-- Status Badge -->
+<div class="absolute top-sm left-sm bg-error text-on-error px-2 py-1 font-label-bold text-[10px] uppercase tracking-widest rounded-sm font-black">
+                            Hot Seller
+                        </div>
+</div>
+<!-- Content Area -->
+<div class="p-gutter flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs line-clamp-1">The Dhaka Double</h3>
+<p class="font-body-md text-body-md text-secondary mb-md line-clamp-2">Two smashed beef patties, naga chili mayo, caramelized onions, and double cheddar.</p>
+<div class="mt-auto flex items-center justify-between">
+<button class="bg-surface-container-high text-primary border border-outline-variant rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary-container hover:text-white hover:border-primary-container active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant group hover:border-primary-container transition-colors flex flex-col relative">
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img alt="Crispy fried chicken burger with spicy mayo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crispy golden fried chicken breast protruding from a soft sesame seed bun, heavily sauced with bright orange spicy mayo and crisp pickles, high contrast lighting on a dark surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDObFfQqmn8-e_Fzayys71PY-9PaFHasXLDrmKu4JgJcQUOYuajb6saWHW-pAS4_zwsiSvuFea7uTrv1kLAf7hmzXt2kGV8_RGcttDAIrLiPznNsnVWHolmUKQe29KXeOwUSCJ37Gcs5gvtKwOWchAkBJxH4_pmCI9MZTk7LXxAzjEuDNdONPnhvUK-JN5eZpfqlH7jwuK5qg8dLY1LJLbq1I-wv0UtEe9Qa6ntzjP6vNjOZuxWVjOkjemSauADjd5FNB81m04_nNs"/>
+<div class="absolute top-sm right-sm bg-primary-container text-white px-3 py-1 font-price-display text-price-display rounded shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                            ৳ 380
+                        </div>
+</div>
+<div class="p-gutter flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs line-clamp-1">Crispy Naga Chicken</h3>
+<p class="font-body-md text-body-md text-secondary mb-md line-clamp-2">Crispy fried chicken thigh tossed in our signature naga extract with cooling slaw.</p>
+<div class="mt-auto flex items-center justify-between">
+<button class="bg-surface-container-high text-primary border border-outline-variant rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary-container hover:text-white hover:border-primary-container active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Category: Bihari Camp Specials -->
+<section class="mb-xl">
+<div class="flex items-center justify-between mb-md border-b border-surface-container-high pb-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Bihari Camp Specials</h2>
+<span class="bg-tertiary-container text-on-tertiary-container px-2 py-1 text-xs font-bold rounded uppercase tracking-wider">Mohammadpur Only</span>
+</div>
+<!-- Bento-style Layout for Specials -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Large Feature Card -->
+<article class="md:col-span-2 bg-surface-container-lowest rounded-lg overflow-hidden border border-outline-variant group hover:border-primary-container transition-colors relative min-h-[300px]">
+<img alt="Sizzling beef kebabs on skewers over charcoal grill" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500" data-alt="Platter of smoking hot, charred beef tikka kebabs straight from the grill, garnished with sliced red onions and green chilies, harsh directional lighting highlighting the juicy texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7atrIUCJkLcY9qU8t2uo23cIXs9tOBkE3Ha7kN69tItlKTE_f89bf5r-AYL2nlbkdIbX8cjTz0ykAv8vAQkPJf7Ri27TwFezZYRUW_jBRdh8bKCaTFtoacEQMXNTikGQRH6fFlJ256SKh5oKGeuZ7tJ5JzooE1_TZdzTDebkNdYI1xbzDBz1Ebvep3JnDp6uRF2NU6KOh5590xQ4g7ZURVDJxJQj1B8LTZWtKfZbOSiiZ3U9DuS-vpq9Kbbf98WtfG80Ciuysjck"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-lg flex flex-col justify-end h-full">
+<div class="flex items-start justify-between mb-sm">
+<div>
+<h3 class="font-display-xl text-display-xl text-white mb-xs leading-none">Legendary Beef Boti</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Marinated for 24 hours in our secret spice blend, grilled over smoking coals.</p>
+</div>
+<div class="bg-primary-container text-white px-4 py-2 font-price-display text-price-display rounded shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                                ৳ 550
+                            </div>
+</div>
+<button class="bg-primary-container text-white font-label-bold text-label-bold py-3 px-6 rounded w-max mt-4 hover:bg-orange-500 active:scale-95 transition-all flex items-center gap-2" onclick="window.location.href='checkout.html'">
+                            Add to Order <span class="material-symbols-outlined text-[18px]" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</article>
+<!-- Smaller Card -->
+<article class="bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant group hover:border-primary-container transition-colors flex flex-col relative">
+<div class="h-40 relative overflow-hidden bg-surface-container-high">
+<img alt="Flaky luchi flatbreads stacked" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stack of golden, flaky, deep-fried luchi flatbreads on a rustic wooden board, warm lighting accentuating the oily crispness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiFO1GzvFITO2M6cWQn2bSHYVTEdZf4PrATTJ9edtN8Q1Rg62cMAwzPWGF4HXdKKAhUY2ZTcq-m95GlAGCrruI320fTMJ7daiTr5oGtPOuZ-leOIYatIOM3evIW-QZDane2VcsPRl-MXVtWCWc_LddY5RpqVUzjzMrzZL_qrslenQe7aKkByITzr21wiyTVxzPajmqEr4zjwMXBL7CiwrB1Npn8H0vn2g-I3Jqy472uLy-R8ZR_eaZYYnY6DxkhoDavJdNlTyxOwM"/>
+<div class="absolute top-sm right-sm bg-primary-container text-white px-3 py-1 font-price-display text-price-display rounded shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                            ৳ 60
+                        </div>
+</div>
+<div class="p-gutter flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Luchi (4 Pcs)</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">Perfectly flaky, deep-fried flatbreads to mop up that kebab juice.</p>
+<div class="mt-auto flex items-center justify-end">
+<button class="bg-surface-container-high text-primary border border-outline-variant rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary-container hover:text-white hover:border-primary-container active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 text-orange-600 dark:text-orange-500 font-bold text-xs uppercase tracking-widest full-width border-t-8 border-orange-600 mt-xl">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 px-10 py-12 max-w-7xl mx-auto">
+<div class="text-xl font-black text-orange-500">Dhaka Cravings</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">About Us</a>
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">Support</a>
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">Privacy</a>
+<a class="text-neutral-500 hover:text-white transition-colors" href="#">Terms</a>
+</div>
+<div class="text-neutral-500 text-center md:text-right">
+                © 2024 Dhaka Cravings. Straight from Mohammadpur.
+            </div>
+</div>
+</footer>
+<!-- Persistent Cart Bar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-white p-margin-mobile border-t-2 border-neutral-200 z-40 flex items-center justify-between shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col">
+<span class="text-neutral-900 font-label-bold text-label-bold">2 Items</span>
+<span class="text-orange-600 font-price-display text-price-display">৳ 830</span>
+</div>
+<button class="bg-primary-container text-white font-label-bold text-label-bold px-6 py-3 rounded active:scale-95 transition-transform flex items-center gap-2 h-[56px]" onclick="window.location.href='checkout.html'">
+            View Cart <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<script src="js/main.js"></script>
+</body></html>
