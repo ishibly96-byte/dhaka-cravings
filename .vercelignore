@@ -1,9 +1,12 @@
+# Ignore EVERYTHING that isn't a frontend file
 server.js
 server.ps1
 index.ts
-functions
-DhakaCravings
-DhakaCravings - Copy*
-.server.pid
+functions/
+node_modules/
+package.json
+package-lock.json
 *.log
-node_modules
+.server.pid
+DhakaCravings/
+DhakaCravings - Copy/

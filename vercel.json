@@ -1,23 +1,12 @@
 {
   "version": 2,
+  "public": true,
   "cleanUrls": true,
   "trailingSlash": false,
-  "functions": {
-    "api/config.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/config",
       "destination": "/api/config.json"
     }
-  ],
-  "ignore": [
-    "server.js",
-    "server.ps1",
-    "index.ts",
-    "functions/**",
-    "node_modules/**"
   ]
 }
