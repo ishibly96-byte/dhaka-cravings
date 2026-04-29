@@ -5,8 +5,8 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/api/config",
-      "destination": "/api/config.json"
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
     }
   ]
 }

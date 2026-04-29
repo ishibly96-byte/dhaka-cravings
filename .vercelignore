@@ -1,12 +1,33 @@
-# Ignore EVERYTHING that isn't a frontend file
-server.js
-server.ps1
-index.ts
-functions/
-node_modules/
-package.json
-package-lock.json
-*.log
+# Build artifacts
+.vercel
+.next
+dist
+build
+
+# Local config
+.env.local
+.env.*.local
+.env
 .server.pid
-DhakaCravings/
-DhakaCravings - Copy/
+server.err.log
+server.out.log
+
+# Backups and copies
+DhakaCravings - Copy*
+package-backup.json
+
+# Node modules
+node_modules
+
+# Firebase
+functions/
+firestore.rules
+firestore.indexes.json
+firebase.json
+
+# Misc
+.git
+.gitignore
+.vscode
+README.md
+server.ps1
