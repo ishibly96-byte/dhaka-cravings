@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/api/config",
+      "destination": "/api/config.json"
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}

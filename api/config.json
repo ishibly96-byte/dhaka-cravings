@@ -1,0 +1,14 @@
+{
+  "stripePublishableKey": "pk_test_51TR5DCRwA5tivEgrHZsBWDnMT2apPkZqytlipJaWJw3YETuIgUFidrJq4PVOYwWNJ91zdGpxVHQ0NOYrP0LyArzY00lBTkQfRK",
+  "stripeReady": true,
+  "stripeCurrency": "bdt",
+  "firebaseConfigured": true,
+  "firebaseConfig": {
+    "apiKey": "AIzaSyA2B5k7jZd-fSHaN8ZN5W3CX51fLzKRZzg",
+    "authDomain": "dhaka-cravings.firebaseapp.com",
+    "projectId": "dhaka-cravings",
+    "storageBucket": "dhaka-cravings.firebasestorage.app",
+    "messagingSenderId": "384608833320",
+    "appId": "1:384608833320:web:3317f8a1109f54edab0a1d"
+  }
+}
